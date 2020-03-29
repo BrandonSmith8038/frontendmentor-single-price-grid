@@ -107,3 +107,49 @@ button.cta-btn:hover {
 .box-3 p:last-of-type {
 	margin-bottom: 0;
 }
+
+@media screen and (min-width: 375px) {
+	.container {
+		display: grid;
+		grid-gap: 0;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 75%;
+		margin-left: 50px;
+	}
+	.box {
+		padding: 40px;
+		width: 100%;
+	}
+	.box-1 {
+		grid-column-start: span 2;
+	}
+	.box-1 .title {
+		margin-top: 30px;
+		font-size: 22px;
+	}
+	.box-1 .subtitle {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.box-1 .info {
+		font-size: 18px;
+	}
+	button.cta-btn {
+		display: inline-block;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.box-2 {
+		border-bottom-left-radius: 10px;
+	}
+	.box-3 {
+		border-bottom-left-radius: 0;
+	}
+	.price {
+		font-size: 25px;
+	}
+	.info {
+		font-size: 18px;
+	}
+}
